@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\title{CS158 - Assignment 1\\Data\\\small{Due: Friday, September 1 at 5pm}}
+\author{}
+\date{}
+
+\parindent=0in
+
+\parskip 7.2pt 
+
+\begin{document}
+\maketitle
+
+\vspace{-0.75in}
+
+\begin{center}
+\includegraphics[scale=0.65]{figures/data.png}
+
+\footnotesize{\url{https://xkcd.com/1429/}}
+\end{center}
+
+\begin{enumerate}
+
+\setcounter{enumi}{-1}
+\item Slack
+
+If you are not a member of the \texttt{cs158-fa2023} slack channel, message me and I'll add you.
+
+\item \textbf{You know the drill}
+
+Read through the administrative handout on the course web page.
+
+\textit{What is the late policy for the course?}
+
+\item \textbf{Data, data, data}
+
+There are now lots of really interesting data sets publicly available to play with.  They range in size, quality and the type of features and have resulted in many new machine learning techniques being developed.  
+
+Find a public, free, supervised (i.e. it must have features \emph{and} labels), machine learning dataset.  You may NOT list a data set from 1) The UCI Machine Learning Repository or 2) from Kaggle.com.  Once you've found the data set, provide the following information:
+
+\begin{enumerate}
+
+\item The name of the data set.
+
+\item Where the data can be obtained.
+
+\item A brief (i.e. 1-2 sentences) description of the data set including what the features are and what is being predicted.
+
+\item The number of examples in the data set.
+
+\item The number of features for each example.  If this isn't concrete (i.e. it's text), then a short description of the features.
+
+\end{enumerate}
+
+Extra credit will be given for particularly interesting data sets, e.g. the most unique, the data set with the largest number of examples and the data set with the largest number of features.
+
+\item \textbf{Data analysis}
+
+One of the first things to do before trying any formal machine learning technique is to dive into the data.  This can include looking for funny values in the data, looking for outliers, looking at the range of feature values, what features seem important, etc.  At:
+
+\mbox{~~~}\url{http://www.cs.pomona.edu/classes/cs158/assignments/assign1/titanic-train.csv}
+
+
+I have provided a modified version of passenger survival data for the Titanic\footnote{The original data can be found at: \url{http://www.kaggle.com/c/titanic-gettingStarted}}.
+
+This data set has six binary features:  
+
+\begin{itemize}
+\item[-] \texttt{First\_class} (whether the passenger was in first class or not)
+\item[-] \texttt{Sex} (0 = Male, 1 = Female)\footnote{I recognize that there are diverse gender identities.  In this case, we are limited by the data and will focus on sex as a binary feature.}
+\item[-] \texttt{Age} (0 = $<$25, 1 = 25+)
+\item[-] \texttt{SibSp} (had siblings/spouses aboard?)
+\item[-] \texttt{ParCh} (had parents/children aboard?)
+\item[-] \texttt{Embarked} (Left from Southhampton?)
+\end{itemize}
+
+Based on these features, the Titanic task is to learn to predict the last column, whether or not the passenger survived (1 = survived).
+
+\begin{enumerate}
+
+\item For each of the features calculate (and write down) the \emph{training error} if you used \textbf{only} that feature to classify the data.  To do this you will need to do the following for each feature:
+
+\begin{itemize}
+
+\item[-] Split the data based on that feature.  Call $bin_0$ all examples that have 0 for that features and $bin_1$ all examples that have 1 for that feature.
+
+\item[-] Calculate the majority count for the label in each bin, i.e. for $bin_0$, 
+\[
+majority(bin_0) = max(count(bin_0=survive), count(bin_0=notsurvive))
+\]
+
+This value is how many examples you would get right in $bin_0$ if you split on that feature.  Make sure you understand why!
+
+\item[-] Calculate the training error for that feature. The accuracy on the training set (i.e. percentage correct) can be calculate as:
+\[
+accuracy = \frac{majority(bin_0)+majority(bin_1)}{totalNumberOfTrainingExamples}\\
+\]
+
+and then\[
+error = 1 - accuracy
+\]
+
+\end{itemize}
+
+You can either write a program to do this in any language you'd like (you don't need to submit the code) or you could also do this in a spreadsheet program like excel.  Your answer to this problem should be 6 error training error rates, one for each feature.
+
+\item Which feature would be the best to use?  Put another way, if we were building a 1-level decision tree using Algorithm 1 from the book, which feature would it pick?
+
+\item Do you agree that this is the best choice to make?  Just 1-2 sentences explaining yes/no is sufficient.
+
+\end{enumerate}
+
+\item Ethics and ML
+
+As machine learning becomes more commonplace, it is increasingly important to think about the ethical implications, including when and how we apply the models, data collection practices, and biases that can be introduced into the models from the data.  Find one article that discusses machine learning ethics:
+
+\begin{enumerate}
+
+\item What is the article (i.e., title and url)?
+
+\item Give a couple of sentence sentence summary of the article?
+
+\item Are there other ethical concerns that you can think of related to the article topic that weren't mentioned?
+
+\end{enumerate}
+
+\end{enumerate}
+
+\textbf{\Large{When you're done}}
+
+Put your answers to the questions above in either a \texttt{.txt} or \texttt{.pdf} file \emph{with your name at the top of the file} and named \emph{lastname.1} (with the corresponding file extension).
+
+Submit your assignment via gradescope.
+\end{document}
