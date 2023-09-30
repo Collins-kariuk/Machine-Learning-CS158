@@ -10,3 +10,6 @@
 [submodule "Assignment/Assignment 04/assignment-4-collins-kariuki"]
 	path = Assignment/Assignment 04/assignment-4-collins-kariuki
 	url = https://github.com/pomonaCS158-fa2023/assignment-4-collins-kariuki.git
+[submodule "Assignment/Assignment 05/assignment-5-munir-collins"]
+	path = Assignment/Assignment 05/assignment-5-munir-collins
+	url = https://github.com/pomonaCS158-fa2023/assignment-5-munir-collins.git
