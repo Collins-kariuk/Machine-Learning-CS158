@@ -25,3 +25,15 @@
 [submodule "Assignments/Assignment 05/assignment-5-munir-collins"]
 	path = Assignments/Assignment 05/assignment-5-munir-collins
 	url = https://github.com/pomonaCS158-fa2023/assignment-5-munir-collins.git
+[submodule "Assignments/Assignment 02 (Decision Trees)/assignment-2-collins-munir"]
+	path = Assignments/Assignment 02 (Decision Trees)/assignment-2-collins-munir
+	url = https://github.com/pomonaCS158-fa2023/assignment-2-collins-munir.git
+[submodule "Assignments/Assignment 03 (Perceptron Learning Algorithm)/assignment-3-brisa-kenny-1"]
+	path = Assignments/Assignment 03 (Perceptron Learning Algorithm)/assignment-3-brisa-kenny-1
+	url = https://github.com/pomonaCS158-fa2023/assignment-3-brisa-kenny-1.git
+[submodule "Assignments/Assignment 04 (k-NN and Feature Preprocessing)/assignment-4-collins-kariuki"]
+	path = Assignments/Assignment 04 (k-NN and Feature Preprocessing)/assignment-4-collins-kariuki
+	url = https://github.com/pomonaCS158-fa2023/assignment-4-collins-kariuki.git
+[submodule "Assignments/Assignment 05 (Multiclass Standoff_AVA vs. OVA)/assignment-5-munir-collins"]
+	path = Assignments/Assignment 05 (Multiclass Standoff_AVA vs. OVA)/assignment-5-munir-collins
+	url = https://github.com/pomonaCS158-fa2023/assignment-5-munir-collins.git
