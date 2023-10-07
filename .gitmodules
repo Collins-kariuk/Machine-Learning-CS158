@@ -37,3 +37,6 @@
 [submodule "Assignments/Assignment 05 (Multiclass Standoff_AVA vs. OVA)/assignment-5-munir-collins"]
 	path = Assignments/Assignment 05 (Multiclass Standoff_AVA vs. OVA)/assignment-5-munir-collins
 	url = https://github.com/pomonaCS158-fa2023/assignment-5-munir-collins.git
+[submodule "Assignments/Assignment 06 (A Gradient Descent Into Gradient Descent)/Assignments/Assignment 06 (A Gradient Descent Into Gradient Descent)/assignment-6-munir-collins-1"]
+	path = Assignments/Assignment 06 (A Gradient Descent Into Gradient Descent)/Assignments/Assignment 06 (A Gradient Descent Into Gradient Descent)/assignment-6-munir-collins-1
+	url = https://github.com/pomonaCS158-fa2023/assignment-6-munir-collins-1.git
