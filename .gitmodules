@@ -46,3 +46,6 @@
 [submodule "Assignments/Assignment 07 (Naïve Bayes or Intelligent Bayes?)/CollinsAssignment7"]
 	path = Assignments/Assignment 07 (Naïve Bayes or Intelligent Bayes?)/CollinsAssignment7
 	url = https://github.com/gagewrye/CollinsAssignment7.git
+[submodule "Assignments/Assignment 08 (Neural Networks)/assignment-8-collins"]
+	path = Assignments/Assignment 08 (Neural Networks)/assignment-8-collins
+	url = https://github.com/pomonaCS158-fa2023/assignment-8-collins.git
