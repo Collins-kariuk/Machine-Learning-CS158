@@ -1,0 +1,27 @@
+Names: Brisa Salazar, Collins Kariuki, Keneth Gonzalez
+
+1. Accuracy of the models: 
+    Accuracy of Perceptron Classifier: 74%
+    Accuracy of Average Perceptron Classifier: 70.2%
+    Accuracy of Deecision Tree: ~78%
+    
+
+2. Runtime Performance on 10 iterations:
+    Average train time: 0.0073s
+    Average test time: 6.0E-4s
+    ------------------------
+    Average Perceptron:
+    Average train time: 0.0055s
+    Average test time: 6.0E-4s
+    -------------------------
+    Decision Tree:
+    Average train time: 0.0014s
+    Average test time: 2.0E-4s
+
+    Reflections: We believe that these numbers make sense. The reason behind this is because we know that the decision tree classifier has the advantage of being recursive. However, because of 
+    the nature of the perceptron algorithm as it updates all of the features and the weighted vectors for them, then it makes sense to be a little slower (since we have to run a couple of 
+    for loops to update these values). 
+    
+3. We decided to test on the accuracy of the algorithms when the number of iterations increases. We found that 
+   if we set the numIterations to 20, Perceptron Classifier accuracy went down (70.2%) while Average Perceptron Classifier accuracy went up (76%). The accuracy for the 
+   DecisionTree algorithm on a depth limit of 20 also decreased (58%). 
