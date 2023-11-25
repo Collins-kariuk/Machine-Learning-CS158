@@ -49,3 +49,6 @@
 [submodule "Assignments/Assignment 08 (Neural Networks)/assignment-8-collins"]
 	path = Assignments/Assignment 08 (Neural Networks)/assignment-8-collins
 	url = https://github.com/pomonaCS158-fa2023/assignment-8-collins.git
+[submodule "Assignments/Final Project/Machine-LearningFinal"]
+	path = Assignments/Final Project/Machine-LearningFinal
+	url = https://github.com/keneth310/Machine-LearningFinal.git
