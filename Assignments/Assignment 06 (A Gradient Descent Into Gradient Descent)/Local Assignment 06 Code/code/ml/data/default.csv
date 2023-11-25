@@ -1,0 +1,14 @@
+# homeowner: 0 = no, 1 = yes,,
+# married: 0 = single/divorced, 1 = married,,
+# income: 0 = <80K, 1 = >=80K,,
+homeowner,married,income,defaulted
+1,0,1,-1
+0,1,1,-1
+0,0,0,-1
+1,1,1,-1
+0,0,1,1
+0,1,0,-1
+1,0,1,-1
+0,0,1,1
+0,1,0,-1
+0,0,1,1
