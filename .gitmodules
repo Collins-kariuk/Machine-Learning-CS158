@@ -52,3 +52,6 @@
 [submodule "Assignments/Final Project/Machine-LearningFinal"]
 	path = Assignments/Final Project/Machine-LearningFinal
 	url = https://github.com/keneth310/Machine-LearningFinal.git
+[submodule "Assignments/Final Project/final_ML_project"]
+	path = Assignments/Final Project/final_ML_project
+	url = https://github.com/keneth310/Machine-LearningFinal.git
