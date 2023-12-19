@@ -69,30 +69,7 @@ public class Experimenter {
      * specifically 0, 1, 2,
      * ..., 10. Show all of your results.
      */
-    public List<Double> q3(DataSet dataset, DecisionTreeClassifer tree) {
-        List<Double> aveAccuracies = new ArrayList<>(11);
-        for (int depth = 0; depth <= 10; depth++) {
-            tree.setDepthLimit(depth);
-            double totalAccuracy = 0.0;
-            for (int i = 0; i < 100; i++) {
-                DataSet[] split = dataset.split(0.8);
-                double correctPredictions = 0.0;
-                tree.train(split[0]);
-                for (Example e : split[1].getData()) {
-                    double result = tree.classify(e);
-                    if (result == e.getLabel())
-                        correctPredictions++;
-                }
-                double accuracyForCurrentIteration = correctPredictions / split[1].getData().size();
-                totalAccuracy += accuracyForCurrentIteration;
-            }
-            if (aveAccuracies.size() > depth)
-                aveAccuracies.set(depth, totalAccuracy / 100);
-            else
-                aveAccuracies.add(totalAccuracy / 100);
-        }
-        return aveAccuracies;
-    }
+    
 
     /*
      * Do we see overfitting with this data set? Repeat the experiment from question
