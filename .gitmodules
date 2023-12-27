@@ -61,3 +61,6 @@
 [submodule "Assignments/Assignment 06 (A Gradient Descent Into Gradient Descent)/Assignment 06 (A Gradient Descent Into Gradient Descent)"]
 	path = Assignments/Assignment 06 (A Gradient Descent Into Gradient Descent)/Assignment 06 (A Gradient Descent Into Gradient Descent)
 	url = https://github.com/pomonaCS158-fa2023/assignment-6-munir-collins-1.git
+[submodule "Assignments/Final Project/Final ProjectMachine-LearningFinal"]
+	path = Assignments/Final Project/Final ProjectMachine-LearningFinal
+	url = https://github.com/keneth310/Machine-LearningFinal.git
